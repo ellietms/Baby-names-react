@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
@@ -34,5 +35,56 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.car{
+  font-size:40px;
+  color:blue;
+}
+
+.boy-name{
+  font-size:20px;
+  display:flex;
+  color:black;
+}
+.container{
+  width:fit-content;
+  margin:1px 7px;
+}
+
+html{
+  height: 100%; 
+  border: thick solid rgb(22, 219, 147);
+  border-top-color: #16DB93;
+  border-bottom-color: #A4036F;
+  border-left-color: #EFEA5A;
+  border-right-color: #FE5E41;
+  /* background-image:url("https://cdn.pixabay.com/photo/2018/12/17/22/15/baby-chick-background-3881391_960_720.png"); */
+  background-image: url("https://live.staticflickr.com/5252/5451917840_9c672b31ba_b.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100%;
+ padding-left: 12%;
+ padding-right: 12%;
+ padding-top: 20%;
+  }
+
+.girl-name{
+  font-size:20px;
+  display:flex;
+  color:#a83291;
+}
+
+.cat{
+  font-size:40px;
+  color:hotpink;
+}
+
+@media(max-width:800px){
+  html{
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 }
