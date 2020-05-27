@@ -46,7 +46,6 @@
 .boy-name{
   font-size:20px;
   display:flex;
-  color:black;
 }
 .container{
   width:fit-content;
@@ -73,12 +72,12 @@ html{
 .girl-name{
   font-size:20px;
   display:flex;
-  color:brown;
+  color:rgb(82, 83, 9);
 }
 
 .cat{
   font-size:40px;
-  color:hotpink;
+  color:rgb(207, 17, 112);
 }
 
 @media(max-width:800px){
