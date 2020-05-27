@@ -55,25 +55,25 @@
 
 html{
   height: 100%; 
-  border: thick solid rgb(22, 219, 147);
+  border: thick solid blue;
   border-top-color: #16DB93;
   border-bottom-color: #A4036F;
   border-left-color: #EFEA5A;
   border-right-color: #FE5E41;
   /* background-image:url("https://cdn.pixabay.com/photo/2018/12/17/22/15/baby-chick-background-3881391_960_720.png"); */
-  background-image: url("https://live.staticflickr.com/5252/5451917840_9c672b31ba_b.jpg");
+  background-image: url("https://lh3.googleusercontent.com/proxy/YXvjCvpVaQ1TPnle3l9e-dBq5LyB24E_b98RaBT7HtjMGpfykFUclJGzdIgEoAvcbaVWdKyup1PuF4i0_YgFkO-lYJE710g");
   background-repeat: no-repeat;
   background-size:cover;
   height: 100%;
  padding-left: 12%;
  padding-right: 12%;
- padding-top: 20%;
+ padding-top: 10%;
   }
 
 .girl-name{
   font-size:20px;
   display:flex;
-  color:#a83291;
+  color:brown;
 }
 
 .cat{
