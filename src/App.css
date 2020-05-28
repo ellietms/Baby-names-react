@@ -40,12 +40,13 @@
 
 .car{
   font-size:40px;
-  color:blue;
+  color:rgb(13, 63, 143);
 }
 
 .boy-name{
   font-size:20px;
   display:flex;
+  color: rgb(11, 10, 78);
 }
 .container{
   width:fit-content;
@@ -53,32 +54,32 @@
 }
 
 html{
-  height: 100%; 
-  border: 20px solid;
-  border-left-color: #16DB93;
-  border-right-color: #A4036F;
-  border-top-color: #EFEA5A;
-  border-bottom-color: #FE5E41;
+border: 20px solid;
+border-left-color: #16DB93;
+border-right-color: #A4036F;
+border-top-color: #EFEA5A;
+border-bottom-color: #FE5E41;
+background-image:url("https://lh3.googleusercontent.com/proxy/YXvjCvpVaQ1TPnle3l9e-dBq5LyB24E_b98RaBT7HtjMGpfykFUclJGzdIgEoAvcbaVWdKyup1PuF4i0_YgFkO-lYJE710g");
   /* background-image:url("https://cdn.pixabay.com/photo/2018/12/17/22/15/baby-chick-background-3881391_960_720.png"); */
-  background-image: url("https://lh3.googleusercontent.com/proxy/YXvjCvpVaQ1TPnle3l9e-dBq5LyB24E_b98RaBT7HtjMGpfykFUclJGzdIgEoAvcbaVWdKyup1PuF4i0_YgFkO-lYJE710g");
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 100%;
- padding-left: 12%;
- padding-right: 12%;
- padding-top: 10%;
-  }
+  /* background-image:url("https://thumbs.dreamstime.com/b/seamless-pattern-realistic-pink-blue-pacifiers-baby-foot-white-background-vector-illustration-92655315.jpg"); */
+background-repeat: no-repeat;
+background-size:85%;
+height: 100%;
+padding-left: 12%;
+padding-right: 12%;
+padding-top: 10%;
+}
 
 .girl-name{
   font-size:20px;
   display:flex;
-  color:rgb(70, 39, 5);
+  color:rgb(93, 11, 59);
   font-weight: bolder;
 }
 
 .cat{
   font-size:40px;
-  color:rgb(163, 10, 87);
+  color:rgb(211, 17, 17);
 }
 
 @media(max-width:800px){
