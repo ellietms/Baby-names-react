@@ -75,9 +75,21 @@ padding-top: 10%;
   font-weight: bolder;
 }
 
+.ellie-name{
+  font-size:20px;
+  display:flex;
+  color:rgb(15, 173, 200);
+  font-weight: bolder;
+}
+
+.ellie{
+  font-size:40px;
+  color:rgb(12, 160, 171);
+}
+
 .cat{
   font-size:40px;
-  color:rgb(133, 7, 7);
+  color:rgb(160, 13, 89);
 }
 
 @media(max-width:800px){
