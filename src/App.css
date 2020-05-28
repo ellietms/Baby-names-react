@@ -71,13 +71,13 @@ padding-top: 10%;
 .girl-name{
   font-size:20px;
   display:flex;
-  color:rgb(93, 11, 59);
+  color:rgb(92, 100, 14);
   font-weight: bolder;
 }
 
 .cat{
   font-size:40px;
-  color:rgb(211, 17, 17);
+  color:rgb(228, 54, 54);
 }
 
 @media(max-width:800px){
