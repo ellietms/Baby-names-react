@@ -1,3 +1,20 @@
+
+html{
+  border: 20px solid;
+  border-left-color: #16DB93;
+  border-right-color: #A4036F;
+  border-top-color: #EFEA5A;
+  border-bottom-color: #FE5E41;
+  background-image: url("https://i.pinimg.com/originals/a3/64/79/a36479a19d3dac64d71edbf46568bb45.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-x: -40px;
+  height:fit-content;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 5%;
+  }
+
 .App {
   text-align: center;
   display: flex;
@@ -8,28 +25,13 @@
   margin:1px 7px;
 }
 
-html{
-border: 20px solid;
-border-left-color: #16DB93;
-border-right-color: #A4036F;
-border-top-color: #EFEA5A;
-border-bottom-color: #FE5E41;
-background-image: url("https://i.pinimg.com/originals/a3/64/79/a36479a19d3dac64d71edbf46568bb45.jpg");
-background-repeat: no-repeat;
-background-size:cover;
-background-position-x: -40px;
-height: 100%;
-padding-left: 12%;
-padding-right: 12%;
-padding-top: 10%;
-}
 .boy{
   font-size:40px;
-  color:rgb(14, 25, 42);
+  color:rgb(12, 96, 223);
   background-color: rgb(203, 233, 228);
   margin-bottom: 2%;
   border-radius: 10px;
-  padding: 2px 2px;
+  padding: 4px 2px;
 }
 
 .boy-name{
@@ -42,13 +44,14 @@ padding-top: 10%;
 .girl-name{
   font-size:20px;
   display:flex;
-  color:rgb(75, 40, 32);
+  color:rgb(39, 15, 9);
   font-weight: bolder;
+  padding: 5px 5px;
 }
 .cat{
   font-size:40px;
-  color:rgb(122, 24, 15);
-  background-color: rgb(245, 205, 198);
+  color:rgb(226, 6, 17);
+  background-color: rgb(242, 191, 223);
   border-radius: 15%;
 }
 
