@@ -3,7 +3,7 @@
   display: flex;
 }
 
-.car{
+.boy{
   font-size:40px;
   color:rgb(13, 63, 143);
 }
@@ -44,18 +44,18 @@ padding-top: 10%;
 .ellie-name{
   font-size:20px;
   display:flex;
-  color:rgb(15, 173, 200);
+  color:rgb(200, 15, 120);
   font-weight: bolder;
 }
 
 .ellie{
   font-size:40px;
-  color:rgb(12, 160, 171);
+  color:rgb(235, 32, 177);
 }
 
 .cat{
   font-size:40px;
-  color:rgb(160, 13, 89);
+  color:rgb(189, 27, 13);
 }
 
 @media(max-width:800px){
