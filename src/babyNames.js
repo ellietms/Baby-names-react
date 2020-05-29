@@ -27,7 +27,7 @@ const MakePageForBabyNames = (props) => {
           else {
             return (
               <span key={index} className="container">
-                <i className="fas fa-car car">
+                <i class="far fa-grin-beam car">
                   <span className="boy-name">{element.name}</span>
                 </i>
               </span>
