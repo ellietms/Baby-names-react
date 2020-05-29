@@ -32,6 +32,11 @@ html{
   margin-bottom: 2%;
   border-radius: 10px;
   padding: 4px 2px;
+  cursor: pointer;
+}
+.boy:hover{
+  transform: scale(1.10);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .boy-name{
@@ -54,6 +59,11 @@ html{
   background-color: rgb(242, 191, 223);
   border-radius: 15%;
   margin-bottom: 2%;
+  cursor: pointer;
+}
+.cat:hover{
+  transform: scale(1.10);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .ellie-name{
@@ -66,8 +76,13 @@ html{
 .ellie{
   font-size:40px;
   color:rgb(9, 100, 80);
+  cursor: pointer;
 }
 
+.ellie:hover{
+  transform: scale(1.50);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
 
 @media(max-width:800px){
