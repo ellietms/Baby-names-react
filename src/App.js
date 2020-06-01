@@ -1,7 +1,8 @@
 import React from 'react';
-import BabyNames from './babyNames'
-import data from './data/babynames.json'
-import style from './'
+import BabyNames from './babyNames';
+import Search from './Search'
+import data from './data/babynames.json';
+import style from './';
 import './App.css';
 
 function App() {

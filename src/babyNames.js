@@ -1,8 +1,10 @@
 import React from "react";
+import Search from './Search';
 
 const MakePageForBabyNames = (props) => {
   return (
     <div className="mainContainer">
+      <Search />
       {props.allNames
         .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((element,index) => {
@@ -27,7 +29,7 @@ const MakePageForBabyNames = (props) => {
           else {
             return (
               <span key={index} className="container">
-                <i class="far fa-grin-beam boy">
+                <i className="far fa-grin-beam boy">
                   <span className="boy-name">{element.name}</span>
                 </i>
               </span>
