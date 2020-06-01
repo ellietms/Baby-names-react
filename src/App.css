@@ -51,8 +51,9 @@
   display: flex;
   justify-self: flex-start;
   padding-left: 0px;
-  background-image: linear-gradient(to right,rgb(236, 137, 203), rgb(65, 125, 254));
+  background-image: linear-gradient(to right,rgb(226, 149, 190), rgb(155, 211, 228));
   border-radius: 50px;
+  font-family: 'Monoton', cursive;
   height: fit-content;
 }
 
