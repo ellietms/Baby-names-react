@@ -2,9 +2,12 @@ import React from "react";
 import Search from './Search';
 
 const MakePageForBabyNames = (props) => {
+  function  findName (){
+    
+  }
   return (
     <div className="mainContainer">
-      <Search />
+      <Search search={findName} />
       {props.allNames
         .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((element,index) => {
