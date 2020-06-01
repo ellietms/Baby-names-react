@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import data from './data/babynames.json';
-import Search from './Search';
 
 const MakePageForBabyNames = (props) => {
   return (

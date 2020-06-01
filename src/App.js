@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import BabyNames from './babyNames';
 import Search from './Search'
 import data from './data/babynames.json';
