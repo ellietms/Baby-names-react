@@ -1,17 +1,25 @@
+html{
+  height: 100%;
+}
+body{
+  background-image: linear-gradient(to right,rgb(226, 149, 190), rgb(155, 211, 228));
+}
 
 .App {
   text-align: center;
   display: flex;
   flex-direction: column;
   border: 20px solid;
+  border-top: 40px solid;
   border-left-color: #16DB93;
   border-right-color: #A4036F;
   border-top-color: #EFEA5A;
   border-bottom-color: #FE5E41;
   background-image: url("./foot.png");
-  background-repeat:no-repeat;
-  background-size:100%;
+  background-repeat:repeat-y;
+  background-size:conver;
   background-position: left;
+  background-position-y: 13px;
   padding-left: 12%;
   padding-right: 12%;
 }
@@ -19,10 +27,11 @@
 .search{
   display: flex;
   justify-content: center;
+  background-color: inherit;
 }
 .input-group-text {
   font-size: 2rem;
-  color: rgb(54, 18, 234);
+  color: rgb(58, 34, 177);
   border: 10px solid;
   border-left-color: #16DB93;
   border-right-color: #A4036F;
@@ -129,8 +138,12 @@
     padding-top: 10%;
     padding-bottom: 10%;
     background-repeat: repeat-y;
-    background-position-x: 30px;
+    background-position-x: 1px;
     background-position-y: 2px;
     padding-top: 1px;
+    margin: 2rem;
+  }
+  body{
+    background-image: linear-gradient(to right,rgb(226, 149, 190), rgb(155, 211, 228));
   }
 }
