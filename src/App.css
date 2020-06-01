@@ -116,7 +116,7 @@
 }
 
 
-@media(max-width:800px){
+@media(max-width:1200px){
   .mainContainer{
     background-size: contain;
     background-position-x: -15px;
@@ -124,5 +124,6 @@
     padding-bottom: 10%;
     background-repeat: repeat-y;
     background-position-x: 10px;
+    padding-top: 1px;
   }
 }
