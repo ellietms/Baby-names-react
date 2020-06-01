@@ -15,7 +15,7 @@ body{
   border-right-color: #A4036F;
   border-top-color: #EFEA5A;
   border-bottom-color: #FE5E41;
-  background-image: linear-gradient(to right,rgb(235, 236, 172), rgb(87, 205, 241));
+  background-image: linear-gradient(to right,rgb(235, 236, 172), rgb(55, 195, 238));
   background-repeat:repeat-y;
   background-size: cover;
   background-position: left;
@@ -60,7 +60,7 @@ body{
   display: flex;
   justify-self: flex-start;
   padding-left: 0px;
-  background-image: linear-gradient(to right,rgb(226, 149, 190), rgb(155, 211, 228));
+  background-image: linear-gradient(to right,rgb(226, 170, 200),#EFEA5A, rgb(129, 184, 104));
   border-radius: 50px;
   font-family: 'Monoton', cursive;
   height: fit-content;
