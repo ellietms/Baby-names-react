@@ -47,6 +47,15 @@
   width:300px;
 }
 
+.favourites {
+  display: flex;
+  justify-self: flex-start;
+  padding-left: 0px;
+  background-image: linear-gradient(to right,rgb(236, 137, 203), rgb(65, 125, 254));
+  border-radius: 50px;
+  height: fit-content;
+}
+
 .container{
   width:fit-content;
   margin:1px 3px;
