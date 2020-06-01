@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useState } from 'react';
+import data from './data/babynames.json';
 import Search from './Search';
 
 const MakePageForBabyNames = (props) => {
-  function  findName (){
-    
-  }
   return (
     <div className="mainContainer">
-      <Search search={findName} />
       {props.allNames
         .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((element,index) => {
