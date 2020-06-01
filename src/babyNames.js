@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const MakePageForBabyNames = (props) => {
   return (
     <div className="mainContainer">
-      {props.allNames
+      {props.filteredNames
         .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((element,index) => {
           if (element.sex === "f" && element.name !== "Ellie") {
