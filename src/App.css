@@ -60,7 +60,7 @@ body{
   display: flex;
   justify-self: flex-start;
   padding-left: 0px;
-  background-image: linear-gradient(to right,rgb(226, 170, 200),#EFEA5A, rgb(129, 184, 104));
+  background-image: linear-gradient(to right,#EFEA5A);
   border-radius: 50px;
   font-family: 'Monoton', cursive;
   height: fit-content;
@@ -74,7 +74,16 @@ body{
   padding-top: 1rem;
   background-image: url("./foot.png");
   margin-bottom: 10px;
-border-radius: 50px;}
+  border-radius: 50px;
+}
+
+.favoriteContainer{
+  padding-top: 1rem;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right,rgb(224, 88, 248),rgb(141, 238, 255), rgb(129, 184, 104));
+  ;
+}
 
 .boy{
   font-size:40px;

@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const MakePageForBabyNames = (props) => {
-  const addtofavourites = () => {
-    console.log("clicked")
-  }
-  return (
-    <div className="mainContainer">
-      {props.filteredNames
-        .sort((a, b) => (a.name > b.name ? 1 : -1))
-        .map((element,index) => {
-          if (element.sex === "f" && element.name !== "Ellie") {
+
+const BabyName = ({element,index,handleName}) => {
+    const  addtofavourites = () => {
+       console.log("click");
+       handleName(element);
+    }
+    if (element.sex === "f" && element.name !== "Ellie") {
             return (
               <span  onClick={addtofavourites}  key={index} className="container">
                 <i className="fab fa-github-alt cat">
@@ -36,9 +33,6 @@ const MakePageForBabyNames = (props) => {
               </span>
             );
           }
-        })}
-    </div>
-  );
-};
+}
 
-export default MakePageForBabyNames;
+export default BabyName;
