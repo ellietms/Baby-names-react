@@ -4,7 +4,7 @@ const MakePageForBabyNames = (props) => {
   
   return (
     <div className="mainContainer">
-      {props.names
+      {props.filteredNames
         .sort((a, b) => (a.name > b.name ? 1 : -1))
         .map((element,index) => {
         return(
