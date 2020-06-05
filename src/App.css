@@ -29,7 +29,10 @@ h1{
 .search{
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   background-color: inherit;
+  width: 100%;
 }
 .input-group-text {
   font-size: 2rem;
@@ -41,7 +44,7 @@ h1{
   border-bottom-color: #FE5E41;
   border-radius: 0.25rem;
 }
-.form-control {
+.formControl {
   background-color: white;
   background-clip: padding-box;
   border: 3px solid;
@@ -49,16 +52,16 @@ h1{
   border-right-color: #A4036F;
   border-top-color: #EFEA5A;
   border-bottom-color: #FE5E41;
-  height: inherit;
+  height:100px;
+  width: 100%;
+  padding: auto;
+
 }
 .form-control::-webkit-input-placeholder {
   color: rgb(150, 98, 233);
 }
-.input-group > .form-control:not(:first-child){
-  width:300px;
-}
-
-.favourites {
+ 
+.favourites{
   display: flex;
   justify-self: flex-start;
   padding-left: 0px;
@@ -67,6 +70,10 @@ h1{
   font-family: 'Monoton', cursive;
   height: fit-content;
 }
+
+.input-group > .form-control:not(:first-child){
+  width:300px;
+}  
 
 .container{
   width:fit-content;
@@ -103,7 +110,40 @@ h1{
   transform: scale(1.10);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
+.girl-top{
+  color: rgb(221, 61, 12);
+  cursor: pointer;
+  border-right: 6px solid;
+  border-left: 6px solid;
+  border-radius: 10px;
+  border-right-color: rgb(170, 7, 7);
+  border-left-color: rgb(169, 14, 8) ;
+}
+.boy-top{
+  color: rgb(7, 25, 126);
+  cursor: pointer;
+  border-right: 6px solid;
+  border-left: 6px solid;
+  border-radius: 10px;
+  border-right-color: rgb(7, 133, 7);
+  border-left-color: rgb(7, 133, 7) ;
+}
+.baby-top{
+  cursor: pointer;
+  border-right: 6px solid;
+  border-left: 6px solid;
+  border-radius: 10px;
+  border-right-color: rgb(15, 157, 167);
+  border-left-color: rgb(11, 121, 155) ;
+}
+.baby-top-boy{
+  color: rgb(44, 10, 153);
+  cursor: pointer;
+}
+.baby-top-girl{
+  color: rgb(209, 68, 12);
+  cursor: pointer;
+}
 .boy-name{
   font-size:20px;
   display:flex;
@@ -165,4 +205,13 @@ h1{
   body{
     background-image: linear-gradient(to right,rgb(226, 149, 190), rgb(155, 211, 228));
   }
+  input{
+    width: 100px;
+    }
+    .form-control{
+      width: max-content;
+    }
+    .input-group > .form-control:not(:first-child){
+      width: max-content;;
+    }  
 }
