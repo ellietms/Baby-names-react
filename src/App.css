@@ -4,7 +4,9 @@ html{
 body{
   background-image: linear-gradient(to right,rgb(226, 149, 190), rgb(155, 211, 228));
 }
-
+h1{
+  width: fit-content;
+}
 .App {
   text-align: center;
   display: flex;
@@ -75,9 +77,12 @@ body{
   background-image: url("./foot.png");
   margin-bottom: 10px;
   border-radius: 50px;
+  margin: auto;
 }
 
 .favoriteContainer{
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 1rem;
   margin-bottom: 10px;
   border-radius: 50px;
