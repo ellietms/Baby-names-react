@@ -24,19 +24,35 @@ function App() {
   const handleFilterClick = (passedFilter) => {
      setFilterNames(filterNames.filter( (tag) => tag !== passedFilter ))
    }
+  
+  
+  const handleGirlName= () => {
+    data.filter(element => element.sex === "f").filter((element) => (element.name.toLowerCase().includes(inputName.toLowerCase())))
+    .sort((a, b) => (a.name > b.name ? 1 : -1))
+    .map((passedName) => {
+          return(
+          <BabyName  element={passedName} 
+          id={Names.indexOf(passedName)}
+          handleNameClick={handleNameClick}
+         /> 
+    )})
+  }
 
    
-   const Names = (data.filter((element) => 
+  const Names = (data.filter((element) => 
     (element.name.toLowerCase().includes(inputName.toLowerCase()))  
   ))
 
   return (
   <div className = "App" >
-  <Search value={inputName} handleInput={handleInput}/>
+  <Search value={inputName}
+  handleInput={handleInput}
+  handleGirlName={handleGirlName}/>
   <Favorites filterNames={filterNames} handleFilterClick={handleFilterClick}/>    
   <div className="mainContainer">
-  { data.filter(element => !(filterNames.includes(element))).filter((element) => 
-    (element.name.toLowerCase().includes(inputName.toLowerCase()))).sort((a, b) => (a.name > b.name ? 1 : -1))
+  { data.filter(element => !(filterNames.includes(element)))
+  .filter((element) => (element.name.toLowerCase().includes(inputName.toLowerCase())))
+  .sort((a, b) => (a.name > b.name ? 1 : -1))
       .map((passedName) => {
         return(
         <BabyName  element={passedName} 
