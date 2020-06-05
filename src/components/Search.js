@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const Search = (props) => {
+const Search = ({value,handleInput}) => {
  return(
     <div className="navbar mt-5 mb-4 search">
     <form className="form-inline">
@@ -11,7 +11,7 @@ const Search = (props) => {
     <i className="fas fa-baby"></i>
     </span>
     </div>
-    <input type="text"  value = {props.inputName} onChange={props.handleInput} className="form-control" placeholder="Pick your baby name.." aria-label="Username" aria-describedby="basic-addon1"/>
+    <input type="text"  value = {value} onChange={handleInput} className="form-control" placeholder="Pick your baby name.." aria-label="Username" aria-describedby="basic-addon1"/>
     </div>
     </form>
     </div>

@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import Search from './Search';
+import Search from './components/Search';
 import data from './data/babynames.json';
 import BabyName from './components/BabyName';
 import Favorites from './components/Favourites';
@@ -7,57 +7,44 @@ import './App.css';
 
 
 function App() {
-  const [inputName,setInputName] = useState("");
-  const [dataNames,setNames] = useState([]);
+  
+  const[inputName,setInputName] = useState("");
   const[filterNames,setFilterNames] = useState([]);
-
-  useEffect(() => {setNames(data)});
-
+  
   const handleInput = (event) => {
     setInputName(event.target.value);
   }
 
-  function handleNameClick(element) {
-    if(filterNames.includes(element)) return;
-    setFilterNames([...filterNames,element])
-}
-   function removeFavoritesFromPage({name,id,sex}){
-     if(filterNames.length === 0){
-       return true;
-     }
-    const tags =[name,id,sex];
-    return (
-      filterNames.every((filter) => tags.includes(filter))
-    )
-   }
+  function handleNameClick(passedName) {
+  if(filterNames.includes(passedName)) return;
+  setFilterNames([...filterNames,passedName]); 
+ }
 
-   const handleFilterClick = (passedFilter) => {
+  
+  const handleFilterClick = (passedFilter) => {
      setFilterNames(filterNames.filter( (tag) => tag !== passedFilter ))
    }
 
-  console.log(filterNames)
+   
+   const Names = (data.filter((element) => 
+    (element.name.toLowerCase().includes(inputName.toLowerCase()))  
+  ))
 
-  const Names = (dataNames.filter((element) => {
-    return (
-      (element.name.toLowerCase().includes(inputName.toLowerCase())) ||
-      (removeFavoritesFromPage)
-    )}))
-
-
-  
-  
   return (
   <div className = "App" >
   <Search value={inputName} handleInput={handleInput}/>
   <Favorites filterNames={filterNames} handleFilterClick={handleFilterClick}/>    
   <div className="mainContainer">
-    {Names.sort((a, b) => (a.name > b.name ? 1 : -1))
-      .map((element,index) => {
+  { data.filter(element => !(filterNames.includes(element))).filter((element) => 
+    (element.name.toLowerCase().includes(inputName.toLowerCase()))).sort((a, b) => (a.name > b.name ? 1 : -1))
+      .map((passedName) => {
         return(
-        <BabyName  element={element} 
-        index={index}
-        handleNameClick={handleNameClick}/> 
-        )})}
+        <BabyName  element={passedName} 
+        id={Names.indexOf(passedName)}
+        handleNameClick={handleNameClick}
+       /> 
+        )})
+    }
     </div>
   </div> 
   );

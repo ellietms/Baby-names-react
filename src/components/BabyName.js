@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-const BabyName = ({element,index,handleNameClick}) => {
+const BabyName = ({element,handleNameClick,}) => {
     
     if (element.sex === "f" && element.name !== "Ellie") {
             return (
-              <span key={index}
+              <span id={element.id}
                className="container"
-               onClick ={() => handleNameClick(element)}>
+               onClick ={() => {handleNameClick(element)}}>
                 <i className="fab fa-github-alt cat">
                   <span className="girl-name">{element.name}</span>
                 </i>
@@ -16,9 +16,9 @@ const BabyName = ({element,index,handleNameClick}) => {
           } 
           else if(element.name === "Ellie"){
             return (
-                <span  key={index} 
+                <span  id={element.id} 
                 className="container"
-                onClick ={() => handleNameClick(element)}>
+                onClick ={() => {handleNameClick(element)}}>
                   <i className="fab fa-github-alt ellie">
                     <span className="ellie-name">{element.name}</span>
                   </i>
@@ -27,9 +27,9 @@ const BabyName = ({element,index,handleNameClick}) => {
           }
           else {
             return (
-              <span  key={index}
+              <span  id={element.id}
               className="container"
-              onClick ={() => handleNameClick(element)}>
+               onClick ={() => {handleNameClick(element)}}>
                 <i className="far fa-grin-beam boy">
                   <span className="boy-name">{element.name}</span>
                 </i>
