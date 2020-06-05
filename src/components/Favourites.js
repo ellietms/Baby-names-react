@@ -3,7 +3,7 @@ import React from 'react';
 const Favourites = ({filterNames,handleFilterClick}) => {
     return(
       <div className="favoriteContainer">
-      <h1 className="favourites mx-5"><p className="mt-3 ml-4" style={{color:'#fff'}}>Favo</p><p className="mt-3" style={{color:"purple"}} >urites : </p></h1>
+      <h1 className="favourites p-2 mx-2"><p className="mt-3 ml-1 d-flex " style={{color:'#fff'}}>Favo</p><p className="mt-3 mr-1" style={{color:"purple"}} >urites: </p></h1>
        {filterNames.sort((a, b) => (a.name > b.name ? 1 : -1)).map((element,index) => {
           if (element.sex === "f") {
             return (
