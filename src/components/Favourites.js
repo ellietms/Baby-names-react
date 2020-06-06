@@ -5,7 +5,7 @@ const Favourites = ({filterNames,handleFilterClick}) => {
       <div className="favoriteContainer">
       <h1 className="favourites p-2 mx-2"><p className="mt-3 ml-1 d-flex " style={{color:'#fff'}}>Favo</p><p className="mt-3 mr-1 favorites" style={{color:"red"}} >urites: </p></h1>
        {filterNames.sort((a, b) => (a.name > b.name ? 1 : -1)).map((element,index) => {
-          if (element.sex === "f") {
+          if (element.sex === "f"  && element.name !== "Ellie") {
             return (
               <span key={index}
                className="container m-2"
@@ -16,6 +16,19 @@ const Favourites = ({filterNames,handleFilterClick}) => {
               </span>
             );  
           } 
+
+          else if(element.name === "Ellie"){
+            return (
+                <span  id={element.id} 
+                className="container"
+                onClick ={() => {handleFilterClick(element)}}>
+                  <i className="fab fa-github-alt ellie pl-2  pr-2 ">
+                    <span className="ellie-name">{element.name}</span>
+                  </i>
+                </span>
+              );  
+          }
+
           else {
             return (
               <span  key={index}

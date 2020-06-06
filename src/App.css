@@ -142,14 +142,15 @@ h1{
 .ellie-name{
   font-size:20px;
   display:flex;
-  color:rgb(12, 112, 50);
+  color:rgb(45, 9, 165);
   font-weight: bolder;
 }
 
 .ellie{
   font-size:40px;
-  color:rgb(9, 100, 80);
+  color:rgb(151, 16, 133);
   cursor: pointer;
+  background-image: linear-gradient(to right,rgb(214, 41, 11),rgb(223, 249, 253),rgb(40, 243, 91));
 }
 
 .ellie:hover{
