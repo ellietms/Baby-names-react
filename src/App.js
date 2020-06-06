@@ -9,9 +9,9 @@ import './App.css';
 function App() {
   
   const[inputName,setInputName] = useState("");
-  const[filterNames,setFilterNames] = useState([]);
+  const[favoriteNames,setFavoriteNames] = useState([]);
   const[Names, setNames] = useState(data);
-  const[filteredNames, setfilteredNames] = useState(data);
+  const [filteredNames, setfilteredNames] = useState(data);
 
   useEffect(()=> {
     setNames(data);
@@ -41,15 +41,18 @@ function handleGender(){
   }
 
   function handleNameClick(passedName) {
-  if(filterNames.includes(passedName)) return;
-  setFilterNames([...filterNames,passedName]); 
+  if(favoriteNames.includes(passedName)) return;
+  setFavoriteNames([...favoriteNames,passedName]); 
  }
 
   
   const handleFilterClick = (passedFilter) => {
-     setFilterNames(filterNames.filter( (tag) => tag !== passedFilter ))
+     setFavoriteNames(favoriteNames.filter( (tag) => tag !== passedFilter ))
    }
   
+
+
+
   return (
   <div className = "App" >
   <Search value={inputName}
@@ -71,11 +74,11 @@ function handleGender(){
   </i>
   </button>
   </div>
-  <Favorites filterNames={filterNames} 
+  <Favorites favoriteNames={favoriteNames} 
   handleFilterClick={handleFilterClick}/>    
   
   <div className="mainContainer">
-  {filteredNames.filter(element => !(filterNames.includes(element)))
+  {filteredNames.filter(element => !(favoriteNames.includes(element)))
   .filter((element) => (element.name.toLowerCase().includes(inputName.toLowerCase())))
   .sort((a, b) => (a.name > b.name ? 1 : -1))
       .map((passedName) => {
