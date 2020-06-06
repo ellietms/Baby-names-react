@@ -60,7 +60,10 @@ h1{
 .form-control::-webkit-input-placeholder {
   color: rgb(150, 98, 233);
 }
- 
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+}
 .favourites{
   display: flex;
   justify-self: flex-start;
@@ -118,6 +121,7 @@ h1{
   border-radius: 10px;
   border-right-color: rgb(170, 7, 7);
   border-left-color: rgb(169, 14, 8) ;
+  font-size: 40px;
 }
 .boy-top{
   color: rgb(7, 25, 126);
@@ -127,6 +131,7 @@ h1{
   border-radius: 10px;
   border-right-color: rgb(7, 133, 7);
   border-left-color: rgb(7, 133, 7) ;
+  font-size: 40px;
 }
 .baby-top{
   cursor: pointer;
@@ -134,15 +139,17 @@ h1{
   border-left: 6px solid;
   border-radius: 10px;
   border-right-color: rgb(15, 157, 167);
-  border-left-color: rgb(11, 121, 155) ;
+  border-left-color: rgb(11, 121, 155);
 }
 .baby-top-boy{
   color: rgb(44, 10, 153);
   cursor: pointer;
+  font-size: 40px;
 }
 .baby-top-girl{
   color: rgb(209, 68, 12);
   cursor: pointer;
+  font-size: 40px;
 }
 .boy-name{
   font-size:20px;
@@ -190,7 +197,7 @@ h1{
 }
 
 
-@media(max-width:1200px){
+@media(max-width:800px){
   .App{
     background-size: contain;
     background-position-x: -15px;
@@ -213,5 +220,25 @@ h1{
     }
     .input-group > .form-control:not(:first-child){
       width: max-content;;
-    }  
+    } 
+    .boy-top{
+      font-size: 30px;
+    }
+    .girl-top{
+      font-size: 30px;
+    }
+    .baby-top-boy{
+      font-size: 20px;
+    }
+    .baby-top-girl{
+      font-size: 20px;
+    }
+    .favourites{
+      font-size: 20px;
+    }
+    .input-group-text{
+      display: none;
+    }
+
+
 }
