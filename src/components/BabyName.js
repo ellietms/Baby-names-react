@@ -8,7 +8,7 @@ const BabyName = ({element,handleNameClick,}) => {
               <span id={element.id}
                className="container"
                onClick ={() => {handleNameClick(element)}}>
-                <i className="fab fa-github-alt cat pl-2  pr-2 my-2">
+                <i className="fab fa-github-alt cat pl-2  pr-2 mb-2">
                   <span className="girl-name">{element.name}</span>
                 </i>
               </span>
