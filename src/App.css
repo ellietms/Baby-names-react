@@ -12,12 +12,12 @@ h1{
   display: flex;
   flex-direction: column;
   border: 20px solid;
-  border-top: 40px solid;
+  border: 40px solid;
   border-left-color: #16DB93;
   border-right-color: #A4036F;
   border-top-color: #EFEA5A;
   border-bottom-color: #FE5E41;
-  background-image: linear-gradient(to right,rgb(124, 186, 211), rgb(238, 172, 232));
+  background-image: linear-gradient(to right,rgb(231, 63, 63), rgb(241, 240, 220), rgb(35, 76, 165));
   background-repeat:repeat-y;
   background-size: cover;
   background-position: left;
@@ -47,7 +47,7 @@ h1{
 .formControl {
   background-color: white;
   background-clip: padding-box;
-  border: 3px solid;
+  border: 10px solid;
   border-left-color: #16DB93;
   border-right-color: #A4036F;
   border-top-color: #EFEA5A;
@@ -55,10 +55,18 @@ h1{
   height:100px;
   width: 100%;
   padding: auto;
-
 }
 .form-control::-webkit-input-placeholder {
   color: rgb(150, 98, 233);
+}
+.favoriteContainer{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right,rgb(18, 96, 185),white,rgb(241, 19, 19));
+  ;
 }
 .buttonContainer{
   display: flex;
@@ -68,7 +76,6 @@ h1{
   display: flex;
   justify-self: flex-start;
   padding-left: 0px;
-  background-image: linear-gradient(to right,#EFEA5A);
   border-radius: 50px;
   font-family: 'Monoton', cursive;
   height: fit-content;
@@ -88,31 +95,68 @@ h1{
   margin-bottom: 10px;
   border-radius: 50px;
   margin: auto;
-}
-
-.favoriteContainer{
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 1rem;
   margin-bottom: 20px;
-  border-radius: 50px;
-  background-image: linear-gradient(to right,rgb(224, 88, 248),rgb(141, 238, 255), rgb(129, 184, 104));
-  ;
 }
 
 .boy{
-  font-size:40px;
-  color:rgb(12, 96, 223);
-  background-color: rgb(203, 233, 228);
+  font-size:35px;
+  color:rgb(80, 15, 155);
+  background-color: rgb(207, 185, 241);
   margin-bottom: 2%;
   border-radius: 10px;
-  padding: 4px 2px;
+  padding: 4px 3px;
   cursor: pointer;
+  padding-top:10px;
 }
 .boy:hover{
   transform: scale(1.10);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+.boy-name{
+  font-size:18px;
+  display:flex;
+  color: rgb(53, 5, 109);
+  text-align: center;
+  font-weight: bolder;
+}
+.girl-name{
+  font-size:18px;
+  display:flex;
+  color:rgb(63, 73, 7);
+  font-weight: bolder;
+  padding: 5px 5px;
+}
+.cat{
+  font-size:35px;
+  color:rgb(194, 22, 122);
+  background-color: rgb(245, 158, 213);
+  border-radius: 15%;
+  padding-top:10px;
+  cursor: pointer;
+}
+.cat:hover{
+  transform: scale(1.10);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.ellie-name{
+  font-size:20px;
+  display:flex;
+  color:rgb(12, 112, 50);
+  font-weight: bolder;
+}
+
+.ellie{
+  font-size:40px;
+  color:rgb(9, 100, 80);
+  cursor: pointer;
+}
+
+.ellie:hover{
+  transform: scale(1.50);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 .girl-top{
   color: rgb(221, 61, 12);
   cursor: pointer;
@@ -150,50 +194,6 @@ h1{
   color: rgb(209, 68, 12);
   cursor: pointer;
   font-size: 40px;
-}
-.boy-name{
-  font-size:20px;
-  display:flex;
-  color: rgb(10, 8, 124);
-  text-align: center;
-  font-weight: bolder;
-}
-.girl-name{
-  font-size:20px;
-  display:flex;
-  color:rgb(39, 15, 9);
-  font-weight: bolder;
-  padding: 5px 5px;
-}
-.cat{
-  font-size:40px;
-  color:rgb(226, 6, 17);
-  background-color: rgb(242, 191, 223);
-  border-radius: 15%;
-  margin-bottom: 2%;
-  cursor: pointer;
-}
-.cat:hover{
-  transform: scale(1.10);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.ellie-name{
-  font-size:20px;
-  display:flex;
-  color:rgb(12, 112, 50);
-  font-weight: bolder;
-}
-
-.ellie{
-  font-size:40px;
-  color:rgb(9, 100, 80);
-  cursor: pointer;
-}
-
-.ellie:hover{
-  transform: scale(1.50);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 
