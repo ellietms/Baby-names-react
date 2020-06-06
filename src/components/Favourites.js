@@ -20,7 +20,7 @@ const Favourites = ({filterNames,handleFilterClick}) => {
           else if(element.name === "Ellie"){
             return (
                 <span  id={element.id} 
-                className="container"
+                className="container m-2"
                 onClick ={() => {handleFilterClick(element)}}>
                   <i className="fab fa-github-alt ellie pl-2  pr-2 ">
                     <span className="ellie-name">{element.name}</span>

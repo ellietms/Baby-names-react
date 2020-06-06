@@ -151,6 +151,8 @@ h1{
   color:rgb(151, 16, 133);
   cursor: pointer;
   background-image: linear-gradient(to right,rgb(214, 41, 11),rgb(223, 249, 253),rgb(40, 243, 91));
+  padding-top: 10px;
+  border-radius: 10px;
 }
 
 .ellie:hover{
