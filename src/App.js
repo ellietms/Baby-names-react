@@ -10,29 +10,29 @@ function App() {
   
   const[inputName,setInputName] = useState("");
   const[filterNames,setFilterNames] = useState([]);
-  const [polls, setPolls] = useState(data);
-  const [filteredPolls, setfilteredPolls] = useState(data);
+  const[Names, setNames] = useState(data);
+  const[filteredNames, setfilteredNames] = useState(data);
 
   useEffect(()=> {
-    setPolls(data);
-    setfilteredPolls(data);
+    setNames(data);
+    setfilteredNames(data);
   },[])
 
- let girl = polls.filter(e => e.sex === "f")
- let boy = polls.filter(e => e.sex === "m")
+ let girl = Names.filter(e => e.sex === "f")
+ let boy = Names.filter(e => e.sex === "m")
  let all = data;
  
 
  function handleGirl() {
-   setfilteredPolls(girl);
+   setfilteredNames(girl);
  }
 
  function handleBoy(){
-   setfilteredPolls(boy);  
+   setfilteredNames(boy);  
   }
 
 function handleGender(){
-  setfilteredPolls(all);
+  setfilteredNames(all);
 }
 
 
@@ -50,24 +50,6 @@ function handleGender(){
      setFilterNames(filterNames.filter( (tag) => tag !== passedFilter ))
    }
   
-  
-  const handleGirlName= () => {
-    data.filter(element => element.sex === "f").filter((element) => (element.name.toLowerCase().includes(inputName.toLowerCase())))
-    .sort((a, b) => (a.name > b.name ? 1 : -1))
-    .map((passedName) => {
-          return(
-          <BabyName  element={passedName} 
-          id={Names.indexOf(passedName)}
-          handleNameClick={handleNameClick}
-         /> 
-    )})
-  }
-
-   
-  const Names = (data.filter((element) => 
-    (element.name.toLowerCase().includes(inputName.toLowerCase()))  
-  ))
-
   return (
   <div className = "App" >
   <Search value={inputName}
@@ -93,7 +75,7 @@ function handleGender(){
   handleFilterClick={handleFilterClick}/>    
   
   <div className="mainContainer">
-  {filteredPolls.filter(element => !(filterNames.includes(element)))
+  {filteredNames.filter(element => !(filterNames.includes(element)))
   .filter((element) => (element.name.toLowerCase().includes(inputName.toLowerCase())))
   .sort((a, b) => (a.name > b.name ? 1 : -1))
       .map((passedName) => {
